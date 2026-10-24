@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171126"><title>صحنه | مدیریت تولید تئاتر</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--bg:#100d1a;--surface:#171126;--accent:#a78bfa;--accent2:#f0abfc;--panel:rgba(255,255,255,.075);--panel2:rgba(255,255,255,.11);--line:rgba(255,255,255,.13);--text:#f8f4ff;--muted:#b7aecb;--purple:#a78bfa;--pink:#f0abfc;--green:#86efac;--red:#fda4af;--shadow:0 20px 60px #05030b80}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#573b8c66,transparent 38%),radial-gradient(ellipse at 90% 30%,#7c3aed2b,transparent 35%),linear-gradient(135deg,#100d1a,#171126 60%,#100d1a);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:clamp(210px,19vw,270px) minmax(0,1fr);min-height:100vh;max-width:1920px;margin:0 auto}.sidebar{border-left:1px solid var(--line);background:#130f20b8;backdrop-filter:blur(24px);padding:24px 16px;position:sticky;top:0;height:100vh}.brand{display:flex;gap:12px;align-items:center;padding:4px 8px 28px}.logo{width:46px;height:46px;border-radius:16px;background:linear-gradient(145deg,var(--accent),var(--accent2));display:grid;place-items:center;font-size:24px;box-shadow:0 8px 30px #8b5cf655}.brand h1{font-size:20px;margin:0}.brand small{color:var(--muted)}.nav{display:grid;gap:7px}.nav button{color:var(--muted);text-align:right;border:1px solid transparent;background:transparent;padding:12px 14px;border-radius:14px;display:flex;align-items:center;gap:12px}.nav button.active,.nav button:hover{background:#ffffff0b;border-color:#c4b5fd35;color:white}.nav .ico{font-size:19px;width:25px;text-align:center}.side-note{position:absolute;bottom:18px;left:16px;right:16px;border:1px solid var(--line);border-radius:18px;padding:14px;background:var(--panel)}.side-note strong{display:block;font-size:13px}.side-note span{font-size:12px;color:var(--muted)}main{padding:26px clamp(16px,3vw,42px) 45px;min-width:0;max-width:1600px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:26px}.eyebrow{color:var(--pink);font-size:12px;font-weight:700;letter-spacing:.3px}.topbar h2{margin:4px 0 0;font-size:clamp(22px,3vw,30px)}.top-actions{display:flex;gap:10px;align-items:center}.date-pill,.glass{border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(20px);box-shadow:var(--shadow);border-radius:18px}.date-pill{padding:10px 14px;color:var(--muted);font-size:13px}.btn{border:0;border-radius:14px;padding:11px 16px;color:white;background:linear-gradient(120deg,var(--accent),var(--accent2));font-weight:700;box-shadow:0 8px 25px #8b5cf633}.btn:hover{filter:brightness(1.1)}.btn.secondary{background:var(--panel2);border:1px solid var(--line);box-shadow:none}.btn.danger{background:#be123c}.btn.small{padding:7px 10px;font-size:12px}.view{display:none}.view.active{display:block}.hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 28px;margin-bottom:18px;overflow:hidden;position:relative;background:linear-gradient(115deg,#8b5cf62b,#f0abfc0c),var(--panel);border:1px solid var(--line);border-radius:24px;backdrop-filter:blur(22px);box-shadow:var(--shadow)}.hero:after{content:"✦";position:absolute;left:10%;top:-35px;font-size:150px;color:#c4b5fd0c}.hero h3{font-size:23px;margin:5px 0 8px}.hero p{color:var(--muted);margin:0;max-width:560px;line-height:1.9;font-size:14px}.hero-icon{font-size:56px;filter:drop-shadow(0 10px 20px #a78bfa55)}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.stat{padding:18px;border:1px solid var(--line);border-radius:20px;background:var(--panel);backdrop-filter:blur(18px)}.stat-head{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}.stat-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:12px;background:#a78bfa20;font-size:17px}.stat strong{display:block;font-size:30px;margin-top:12px}.stat small{color:var(--muted)}.grid2{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.panel{border:1px solid var(--line);border-radius:22px;padding:20px;background:var(--panel);backdrop-filter:blur(18px);box-shadow:var(--shadow);min-width:0}.panel-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}.panel-title h3{margin:0;font-size:16px}.muted{color:var(--muted)}.tiny{font-size:12px}.production{display:flex;gap:14px;padding:14px;border-radius:17px;border:1px solid #ffffff10;background:#ffffff06;margin-bottom:10px}.prod-poster{width:62px;min-width:62px;height:76px;border-radius:14px;background:linear-gradient(145deg,var(--accent2),var(--accent));display:grid;place-items:center;font-size:27px}.production h4{margin:0 0 5px}.production p{font-size:12px;color:var(--muted);margin:0 0 10px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{font-size:11px;border-radius:99px;padding:4px 9px;background:#a78bfa1e;color:#ddd0ff;border:1px solid #a78bfa30}.tag.green{color:var(--green);background:#22c55e12;border-color:#22c55e25}.tag.orange{color:#fcd34d;background:#f59e0b12;border-color:#f59e0b25}.task{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #ffffff10}.task:last-child{border-bottom:0}.task input{accent-color:#a78bfa;margin-top:5px;width:16px;height:16px}.task strong{font-size:13px;display:block}.task small{color:var(--muted);font-size:11px}.empty{padding:30px 12px;text-align:center;color:var(--muted);font-size:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px;flex-wrap:wrap}.toolbar h3{margin:0;font-size:19px}.search{max-width:280px;width:100%;background:#ffffff08;color:white;border:1px solid var(--line);border-radius:12px;padding:10px 12px;outline:none}.search:focus,input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:2px solid #a78bfa22}.table-wrap{overflow:auto;border:1px solid #ffffff10;border-radius:15px}table{border-collapse:collapse;width:100%;min-width:650px;font-size:13px}th,td{text-align:right;padding:13px 15px;border-bottom:1px solid #ffffff0d}th{color:var(--muted);font-weight:500;background:#ffffff05}tr:last-child td{border-bottom:0}.row-actions{display:flex;gap:6px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:var(--muted)}.field input,.field select,.field textarea{width:100%;background:#100d1a9c;border:1px solid var(--line);border-radius:12px;padding:11px 12px;color:white;min-width:0}.field select option{background:#171126}.field textarea{min-height:85px;resize:vertical}.form-actions{display:flex;gap:9px;justify-content:flex-start;margin-top:18px;flex-wrap:wrap}.modal-backdrop{display:none;position:fixed;inset:0;background:#05030bbd;backdrop-filter:blur(8px);z-index:10;align-items:center;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal{width:min(620px,100%);max-height:92vh;overflow:auto;border:1px solid var(--line);border-radius:24px;background:var(--surface);padding:22px;box-shadow:0 30px 100px #0009}.modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.modal-head h3{margin:0}.close{border:1px solid var(--line);background:var(--panel);color:white;border-radius:10px;width:36px;height:36px}.notice{position:fixed;bottom:22px;left:22px;z-index:30;background:#241b37;border:1px solid #c4b5fd55;border-radius:14px;padding:12px 17px;box-shadow:var(--shadow);display:none}.notice.show{display:block;animation:fade .2s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.calendar-list{display:grid;gap:10px}.event{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:13px;border:1px solid #ffffff12;border-radius:15px;background:#ffffff06}.event-date{min-width:60px;text-align:center;border-radius:12px;background:#a78bfa20;padding:8px;color:#e9ddff}.event-date strong{display:block;font-size:20px}.event h4{margin:0 0 4px;font-size:14px}.event p{margin:0;color:var(--muted);font-size:12px}.money{font-variant-numeric:tabular-nums}.budget-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}.budget-cards .stat strong{font-size:22px}.progress{height:8px;background:#ffffff14;border-radius:20px;overflow:hidden;margin-top:12px}.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:20px}.footer{text-align:center;color:#8f86a5;font-size:11px;margin-top:26px}.theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.theme-card{display:flex;align-items:center;gap:10px;text-align:right;border:1px solid var(--line);border-radius:14px;padding:10px;background:#ffffff06;color:var(--text);min-width:0}.theme-card:hover,.theme-card.selected{border-color:var(--accent);background:#ffffff12}.swatches{display:flex;flex-shrink:0}.swatches i{display:block;width:15px;height:26px;margin-left:-3px;border:1px solid #ffffff30;border-radius:7px}.theme-card span{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.about-card{display:flex;align-items:center;gap:16px;padding:18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(120deg,#a78bfa1c,#ffffff04)}.about-avatar{display:grid;place-items:center;flex-shrink:0;width:54px;height:54px;border-radius:18px;background:linear-gradient(145deg,var(--accent),var(--accent2));font-size:25px}.settings-actions{display:flex;gap:10px;flex-wrap:wrap}.settings-actions input[type=file]{max-width:220px;color:var(--muted);font-size:12px}@media(max-width:850px){.theme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:390px){.nav button span:last-child{font-size:8px}.nav .ico{font-size:16px}.theme-grid{grid-template-columns:1fr}.topbar h2{font-size:20px}}.mobile-menu{display:none}.privacy{font-size:12px;color:var(--muted);line-height:1.8;margin-top:14px}
+
+/* Personal welcome, calendar, notes and daily motivation */
+.welcome-banner{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 25px;margin-bottom:16px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(115deg,var(--accent)20,transparent),var(--panel);backdrop-filter:blur(22px)}
+.welcome-banner h3{margin:5px 0 7px;font-size:22px}.welcome-banner p{margin:0;color:var(--muted);font-size:13px;line-height:1.9}.welcome-mark{font-size:42px}
+.quote-card{margin:0 0 17px;padding:19px 22px;border-radius:20px;border:1px solid #f0abfc30;background:linear-gradient(110deg,#f0abfc12,#a78bfa15);display:flex;gap:13px;align-items:flex-start}.quote-mark{font-size:28px;color:var(--accent2)}.quote-card p{font-size:14px;line-height:2;margin:0}.quote-card small{display:block;color:var(--muted);margin-top:8px}
+.quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}.quick-card{border:1px solid var(--line);border-radius:17px;background:var(--panel);padding:15px;text-align:right;color:var(--text)}.quick-card:hover{border-color:var(--accent)}.quick-card .qico{font-size:22px;display:block;margin-bottom:8px}.quick-card strong{font-size:13px;display:block}.quick-card small{color:var(--muted);font-size:11px}
+.calendar-controls{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:15px}.calendar-controls button{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:11px;padding:8px 12px}.calendar-month{font-weight:700;min-width:145px;text-align:center}.month-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}.day-label{text-align:center;color:var(--muted);font-size:11px;padding:6px 0}.calendar-day{min-height:72px;border:1px solid #ffffff12;border-radius:12px;background:#ffffff04;color:var(--text);padding:7px;text-align:right;position:relative}.calendar-day.muted-day{opacity:.35}.calendar-day.today{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.calendar-day.selected{background:#a78bfa22;border-color:var(--accent)}.calendar-day .daynum{font-size:12px}.calendar-day .event-dot{display:block;font-size:10px;color:var(--accent2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:5px}.notes-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:14px}.note-item{padding:13px;border:1px solid #ffffff12;border-radius:14px;margin-bottom:9px;background:#ffffff05;cursor:pointer}.note-item.active{border-color:var(--accent);background:#a78bfa14}.note-item strong{display:block;font-size:13px}.note-item small{color:var(--muted);font-size:11px}.checklist-item{display:flex;align-items:flex-start;gap:9px;padding:10px 0;border-bottom:1px solid #ffffff10}.checklist-item input{accent-color:var(--accent);margin-top:4px}.checklist-item.done span{text-decoration:line-through;color:var(--muted)}.profile-chip{display:flex;gap:9px;align-items:center;border:1px solid var(--line);background:var(--panel);padding:8px 12px;border-radius:14px;font-size:12px}.profile-chip span:first-child{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--accent);color:#fff}
+@media(max-width:700px){.welcome-banner{padding:17px}.welcome-banner h3{font-size:18px}.welcome-mark{font-size:32px}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.quick-card{padding:12px}.notes-layout{grid-template-columns:1fr}.calendar-day{min-height:52px;padding:5px}.calendar-day .event-dot{font-size:8px}.calendar-controls{justify-content:space-between}.calendar-month{min-width:100px}}
+
+@media(max-width:1000px){.app{grid-template-columns:215px minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:1fr}}
+@media(max-width:700px){.app{display:block}.sidebar{position:fixed;z-index:8;top:auto;bottom:0;left:0;right:0;width:100%;height:auto;padding:7px 8px calc(7px + env(safe-area-inset-bottom));border-left:0;border-top:1px solid var(--line);background:var(--surface)}.brand,.side-note{display:none}.nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav button{flex:1 0 66px}.nav button{padding:8px 3px;justify-content:center;flex-direction:column;gap:3px;font-size:10px;border-radius:11px}.nav .ico{font-size:18px}.nav button span:last-child{white-space:nowrap;font-size:9px}.app main{padding:18px 13px 105px}.topbar{align-items:flex-start}.topbar h2{font-size:22px}.date-pill{display:none}.hero{padding:20px}.hero h3{font-size:19px}.hero-icon{font-size:40px}.panel{padding:15px}.budget-cards{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.toolbar{align-items:stretch}.search{max-width:none}.top-actions .btn{padding:9px 11px;font-size:12px}.stats{gap:9px}.stat{padding:13px}.stat strong{font-size:25px}.stat-head{font-size:11px}.stat-icon{width:30px;height:30px}.production{gap:10px}.prod-poster{width:52px;min-width:52px;height:64px}.footer{padding-bottom:8px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">🎭</div><div><h1>صحنه</h1><small>مدیریت تولید تئاتر</small></div></div>
+  <nav class="nav" id="nav">
+    <button class="active" data-view="dashboard"><span class="ico">◈</span><span>داشبورد</span></button>
+    <button data-view="productions"><span class="ico">🎭</span><span>نمایش‌ها</span></button>
+    <button data-view="people"><span class="ico">♙</span><span>اعضای گروه</span></button>
+    <button data-view="schedule"><span class="ico">▦</span><span>برنامه تمرین</span></button>
+    <button data-view="budget"><span class="ico">◉</span><span>مالی و هزینه‌ها</span></button>
+    <button data-view="calendar"><span class="ico">▦</span><span>تقویم</span></button>
+    <button data-view="notes"><span class="ico">✎</span><span>یادداشت‌ها</span></button>
+    <button data-view="tasks"><span class="ico">☑</span><span>کارها</span></button>
+    <button data-view="settings"><span class="ico">⚙</span><span>تنظیمات</span></button>
+  </nav>
+  <div class="side-note"><strong>✦ فضای کاری شخصی</strong><span>اطلاعات این نسخه روی همین دستگاه ذخیره می‌شود.</span></div>
+</aside>
+<main>
+  <header class="topbar"><div><div class="eyebrow">مدیریت پشت صحنه</div><h2 id="pageTitle">داشبورد</h2></div><div class="top-actions"><div class="date-pill" id="today"></div><button class="btn" id="quickAdd">＋ افزودن مورد</button></div></header>
+  <section class="view active" id="view-dashboard">
+    <div class="welcome-banner"><div><div class="eyebrow">فضای کاری شخصی شما</div><h3 id="welcomeTitle">خوش آمدید به صحنه ✨</h3><p id="welcomeSub">نام خود را ثبت کنید تا برنامه با پیام خوش‌آمدگویی شخصی‌سازی شود.</p></div><div class="welcome-mark">🎭</div></div>
+    <div class="quote-card"><span class="quote-mark">❝</span><div><p id="dailyQuote">هر قدم کوچک، بخشی از یک اجرای بزرگ است.</p><small id="quoteDate"></small></div></div>
+    <div class="quick-grid"><button class="quick-card" data-open="production"><span class="qico">🎭</span><strong>نمایش جدید</strong><small>پروژه تازه ثبت کن</small></button><button class="quick-card" data-open="event"><span class="qico">🗓️</span><strong>برنامه تمرین</strong><small>زمان‌بندی گروه</small></button><button class="quick-card" data-open="note"><span class="qico">📝</span><strong>یادداشت سریع</strong><small>ایده‌ها را ثبت کن</small></button><button class="quick-card" data-open="task"><span class="qico">☑️</span><strong>کار جدید</strong><small>چیزی از قلم نیفتد</small></button></div>
+    <div class="hero"><div><div class="eyebrow">خوش آمدید به صحنه</div><h3>همه‌چیز برای اجرای بهتر، یک‌جا ✨</h3><p>نمایش‌ها، اعضای گروه، زمان‌بندی تمرین‌ها و هزینه‌ها را در یک فضای ساده مدیریت کنید؛ تا انرژی بیشتری برای خودِ هنر باقی بماند.</p></div><div class="hero-icon">🎭</div></div>
+    <div class="stats">
+      <div class="stat"><div class="stat-head"><span>نمایش‌های ثبت‌شده</span><span class="stat-icon">🎭</span></div><strong id="statProductions">0</strong><small>پروژه‌های شما</small></div>
+      <div class="stat"><div class="stat-head"><span>اعضای گروه</span><span class="stat-icon">♙</span></div><strong id="statPeople">0</strong><small>بازیگر و عوامل</small></div>
+      <div class="stat"><div class="stat-head"><span>تمرین‌های پیش‌رو</span><span class="stat-icon">▦</span></div><strong id="statEvents">0</strong><small>برنامه‌های آینده</small></div>
+      <div class="stat"><div class="stat-head"><span>هزینه ثبت‌شده</span><span class="stat-icon">◉</span></div><strong id="statCosts">۰</strong><small>تومان</small></div>
+    </div>
+    <div class="grid2">
+      <div class="panel"><div class="panel-title"><h3>نمایش‌های در جریان</h3><button class="btn secondary small" data-goto="productions">همه نمایش‌ها ←</button></div><div id="dashboardProductions"></div></div>
+      <div class="panel"><div class="panel-title"><h3>کارهای نزدیک</h3><button class="btn secondary small" data-goto="schedule">برنامه کامل</button></div><div id="dashboardTasks"></div></div>
+    </div>
+  </section>
+  <section class="view" id="view-productions">
+    <div class="toolbar"><h3>مدیریت نمایش‌ها</h3><div style="display:flex;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap"><input class="search" id="productionSearch" placeholder="جست‌وجوی نام نمایش…"><button class="btn" id="addProduction">＋ نمایش جدید</button></div></div>
+    <div class="panel"><div id="productionsTable"></div></div>
+  </section>
+  <section class="view" id="view-people">
+    <div class="toolbar"><h3>اعضای گروه و عوامل</h3><div style="display:flex;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap"><input class="search" id="peopleSearch" placeholder="نام، نقش یا شماره…"><button class="btn" id="addPerson">＋ عضو جدید</button></div></div>
+    <div class="panel"><div id="peopleTable"></div></div>
+  </section>
+  <section class="view" id="view-schedule">
+    <div class="toolbar"><h3>تقویم تمرین و اجرا</h3><button class="btn" id="addEvent">＋ برنامه جدید</button></div>
+    <div class="panel"><div id="scheduleList" class="calendar-list"></div></div>
+  </section>
+  <section class="view" id="view-budget">
+    <div class="toolbar"><h3>مالی و هزینه‌های تولید</h3><button class="btn" id="addTransaction">＋ ثبت تراکنش</button></div>
+    <div class="budget-cards">
+      <div class="stat"><div class="stat-head">مجموع درآمد</div><strong id="totalIncome" class="money">۰ تومان</strong></div>
+      <div class="stat"><div class="stat-head">مجموع هزینه</div><strong id="totalExpense" class="money">۰ تومان</strong></div>
+      <div class="stat"><div class="stat-head">مانده</div><strong id="balance" class="money">۰ تومان</strong><div class="progress"><span id="budgetProgress" style="width:0%"></span></div></div>
+    </div>
+    <div class="panel"><div class="panel-title"><h3>دفتر مالی</h3><span class="muted tiny">مبالغ به تومان</span></div><div id="transactionsTable"></div></div>
+  </section>
+
+
+  <section class="view" id="view-calendar">
+    <div class="toolbar"><h3>تقویم برنامه‌ها</h3><button class="btn" id="calendarAdd">＋ برنامه جدید</button></div>
+    <div class="panel">
+      <div class="calendar-controls"><button id="prevMonth">ماه قبل ←</button><div class="calendar-month" id="calendarMonth"></div><button id="nextMonth">→ ماه بعد</button><button id="calendarToday">امروز</button></div>
+      <div class="month-grid" id="monthGrid"></div>
+      <div class="divider" style="margin:16px 0;border-top:1px solid var(--line)"></div>
+      <div class="panel-title"><h3 id="selectedDayTitle">برنامه روز انتخاب‌شده</h3><span class="muted tiny">تمرین، جلسه و اجرا</span></div>
+      <div id="selectedDayEvents" class="calendar-list"></div>
+    </div>
+  </section>
+  <section class="view" id="view-notes">
+    <div class="toolbar"><h3>دفتر یادداشت‌ها</h3><button class="btn" id="addNote">＋ یادداشت جدید</button></div>
+    <div class="panel"><div class="notes-layout"><div><input class="search" id="noteSearch" placeholder="جست‌وجوی یادداشت…" style="max-width:none;margin-bottom:12px"><div id="notesList"></div></div><div id="noteEditor"><div class="empty">برای نوشتن، یادداشت تازه بسازید یا یکی از یادداشت‌ها را انتخاب کنید.</div></div></div></div>
+  </section>
+  <section class="view" id="view-tasks">
+    <div class="toolbar"><h3>فهرست کارها</h3><button class="btn" id="addTask">＋ کار جدید</button></div>
+    <div class="grid2"><div class="panel"><div class="panel-title"><h3>برای انجام</h3><span class="tag orange" id="todoCount">۰</span></div><div id="todoList"></div></div><div class="panel"><div class="panel-title"><h3>انجام‌شده‌ها</h3><span class="tag green" id="doneCount">۰</span></div><div id="doneList"></div></div></div>
+  </section>
+
+  <section class="view" id="view-settings">
+    <div class="toolbar"><h3>تنظیمات و ظاهر برنامه</h3><span class="muted tiny">۴۵ تم جدید + تم اصلی</span></div>
+    <div class="panel" style="margin-bottom:16px"><div class="panel-title"><h3>نام مدیر</h3></div><div class="form-grid"><div class="field"><label for="profileName">نامی که در خوش‌آمدگویی نمایش داده شود</label><input id="profileName" placeholder="مثلاً نام شما"></div><div class="field" style="align-content:end"><button class="btn" id="saveProfile">ذخیره نام</button></div></div></div>
+    <div class="panel" style="margin-bottom:16px">
+      <div class="panel-title"><h3>انتخاب تم رنگی</h3><span class="muted tiny" id="activeThemeName">تم بنفش اصلی</span></div>
+      <p class="muted tiny" style="line-height:1.9;margin-top:-6px">با انتخاب هر تم، رنگ‌های شیشه‌ای برنامه فوراً تغییر می‌کنند. انتخاب شما روی همین مرورگر ذخیره می‌شود.</p>
+      <div class="theme-grid" id="themeGrid"></div>
+    </div>
+    <div class="panel" style="margin-bottom:16px">
+      <div class="panel-title"><h3>پشتیبان‌گیری از اطلاعات</h3></div>
+      <p class="muted tiny" style="line-height:1.9">برای نگهداری نسخه‌ای از نمایش‌ها، اعضا، برنامه‌ها و امور مالی، از اطلاعات خروجی بگیرید. فایل پشتیبان را در جای امن نگه دارید.</p>
+      <div class="settings-actions"><button class="btn" id="exportData">دریافت نسخه پشتیبان</button><label class="btn secondary" for="importData" style="display:inline-flex;align-items:center">بازیابی از فایل JSON</label><input id="importData" type="file" accept=".json,application/json" style="display:none"></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><h3>درباره صحنه</h3><span class="tag">نسخه ۱.۲</span></div>
+      <div class="about-card"><div class="about-avatar">🎭</div><div><strong style="display:block;font-size:16px">صحنه | مدیریت تولید تئاتر</strong><span class="muted tiny">طراحی و توسعه: مهراب مساحی</span><p class="muted tiny" style="line-height:1.9;margin:7px 0 0">فضایی برای نظم‌دادن به تولید نمایش؛ از ثبت گروه و زمان‌بندی تمرین تا پیگیری هزینه‌ها.</p></div></div>
+      <p class="privacy">حریم خصوصی: داده‌ها در این نسخه داخل مرورگر و روی همین دستگاه ذخیره می‌شوند. این نسخه به سرور آنلاین یا حساب کاربری متصل نیست؛ برای همگام‌سازی چنددستگاهی به backend نیاز است.</p>
+    </div>
+  </section>
+
+  <div class="footer">صحنه · فضای شخصی مدیریت تئاتر · نسخه ۱.۲</div>
+</main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><div class="modal-head"><h3 id="modalTitle">افزودن</h3><button class="close" id="closeModal" aria-label="بستن">×</button></div><form id="modalForm"><div id="modalFields" class="form-grid"></div><div class="form-actions"><button class="btn" type="submit">ذخیره اطلاعات</button><button class="btn secondary" type="button" id="cancelModal">انصراف</button></div></form></div></div>
+<div class="notice" id="notice" role="status"></div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const fa=n=>Number(n||0).toLocaleString('fa-IR');
+const money=n=>fa(n)+' تومان';
+const today=new Date(); $('#today').textContent=today.toLocaleDateString('fa-IR',{weekday:'long',day:'numeric',month:'long'});
+const dateISO=d=>{if(!d)return '';const x=new Date(d+'T12:00:00');return Number.isNaN(x.getTime())?d:x.toLocaleDateString('fa-IR',{year:'numeric',month:'short',day:'numeric'});};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const key='sahne_app_data_v1';
+const starter={productions:[],people:[],events:[],transactions:[],notes:[],tasks:[]};
+let db;try{db={...starter,...JSON.parse(localStorage.getItem(key)||'{}')}}catch{db={...starter}};db.notes ||= []; db.tasks ||= [];
+let modalType=null,editId=null;
+function save(){localStorage.setItem(key,JSON.stringify(db));render();showNotice('اطلاعات با موفقیت ذخیره شد.');}
+function id(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function showNotice(s){const n=$('#notice');n.textContent=s;n.classList.add('show');clearTimeout(showNotice.t);showNotice.t=setTimeout(()=>n.classList.remove('show'),2600)}
+function navigate(v){$$('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+v));$$('#nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===v));const names={dashboard:'داشبورد',productions:'نمایش‌ها',people:'اعضای گروه',schedule:'برنامه تمرین',budget:'مالی و هزینه‌ها',calendar:'تقویم',notes:'یادداشت‌ها',tasks:'فهرست کارها',settings:'تنظیمات'};$('#pageTitle').textContent=names[v]||'صحنه';window.scrollTo({top:0,behavior:'smooth'});}
+$('#nav').addEventListener('click',e=>{const b=e.target.closest('button[data-view]');if(b)navigate(b.dataset.view)});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-goto]');if(b)navigate(b.dataset.goto)});
+function field(name,label,type='text',opts={}){let html='';if(type==='select'){html=`<select name="${name}" ${opts.required?'required':''}>${(opts.options||[]).map(o=>`<option value="${esc(o)}">${esc(o)}</option>`).join('')}</select>`}else if(type==='textarea'){html=`<textarea name="${name}" placeholder="${esc(opts.placeholder||'')}" ${opts.required?'required':''}></textarea>`}else{html=`<input name="${name}" type="${type}" ${opts.required?'required':''} ${opts.min!==undefined?'min="'+opts.min+'"':''} ${opts.step?'step="'+opts.step+'"':''} placeholder="${esc(opts.placeholder||'')}">`}return `<div class="field ${opts.full?'full':''}"><label>${label}</label>${html}</div>`}
+function openModal(type,record=null){modalType=type;editId=record?.id||null;const isEdit=!!record;const forms={
+production:{title:isEdit?'ویرایش نمایش':'ثبت نمایش جدید',fields:[['title','نام نمایش','text',{required:true}],['author','نویسنده','text',{}],['director','کارگردان','text',{}],['status','مرحله تولید','select',{options:['ایده‌پردازی','در حال تمرین','آماده اجرا','در حال اجرا','پایان‌یافته']}],['date','تاریخ اجرای احتمالی','date',{}],['venue','محل اجرا','text',{}],['notes','یادداشت','textarea',{full:true}]]},
+person:{title:isEdit?'ویرایش عضو':'افزودن عضو گروه',fields:[['name','نام و نام خانوادگی','text',{required:true}],['role','نقش در گروه','select',{options:['بازیگر','دستیار کارگردان','تهیه‌کننده','کارگردان','نویسنده','طراح صحنه','طراح لباس','نورپرداز','صدابردار','مدیر صحنه','روابط عمومی','سایر']}],['phone','شماره تماس','tel',{}],['production','نمایش مرتبط','select',{options:['بدون انتخاب',...db.productions.map(p=>p.title)]}],['notes','یادداشت / مهارت‌ها','textarea',{full:true}]]},
+event:{title:isEdit?'ویرایش برنامه':'برنامه جدید',fields:[['title','عنوان برنامه','text',{required:true}],['date','تاریخ','date',{required:true}],['time','ساعت','time',{}],['type','نوع برنامه','select',{options:['تمرین','جلسه گروه','طراحی و آماده‌سازی','اجرا','سایر']}],['production','نمایش مرتبط','select',{options:['بدون انتخاب',...db.productions.map(p=>p.title)]}],['location','مکان','text',{}],['notes','توضیحات','textarea',{full:true}]]},
+transaction:{title:isEdit?'ویرایش تراکنش':'ثبت تراکنش مالی',fields:[['title','شرح تراکنش','text',{required:true}],['kind','نوع','select',{options:['هزینه','درآمد']}],['amount','مبلغ (تومان)','number',{required:true,min:0}],['date','تاریخ','date',{required:true}],['production','نمایش مرتبط','select',{options:['بدون انتخاب',...db.productions.map(p=>p.title)]}],['notes','توضیحات','textarea',{full:true}]]}
+};
+const f=forms[type];$('#modalTitle').textContent=f.title;$('#modalFields').innerHTML=f.fields.map(x=>field(...x)).join('');
+if(record)for(const [k,v] of Object.entries(record)){const el=$(`#modalFields [name="${k}"]`);if(el)el.value=v}
+$('#modalBackdrop').classList.add('open');}
+function closeModal(){$('#modalBackdrop').classList.remove('open');$('#modalForm').reset();modalType=null;editId=null}
+$('#closeModal').onclick=closeModal;$('#cancelModal').onclick=closeModal;$('#modalBackdrop').addEventListener('click',e=>{if(e.target===$('#modalBackdrop'))closeModal()});
+$('#modalForm').addEventListener('submit',e=>{e.preventDefault();const data=Object.fromEntries(new FormData(e.target).entries());if('amount'in data)data.amount=Math.max(0,Number(data.amount)||0);if(data.production==='بدون انتخاب')data.production='';const arr={production:'productions',person:'people',event:'events',transaction:'transactions'}[modalType];if(editId){const i=db[arr].findIndex(x=>x.id===editId);if(i>=0)db[arr][i]={...db[arr][i],...data}}else db[arr].push({id:id(),createdAt:new Date().toISOString(),...data});closeModal();save()});
+function removeItem(arr,itemId){if(!confirm('این مورد حذف شود؟ این کار قابل بازگشت نیست.'))return;db[arr]=db[arr].filter(x=>x.id!==itemId);save()}
+function editItem(type,arr,itemId){const rec=db[arr].find(x=>x.id===itemId);if(rec)openModal(type,rec)}
+function table(headers,rows){if(!rows.length)return '<div class="empty">هنوز موردی ثبت نشده است. با دکمه افزودن، اولین مورد را بسازید.</div>';return `<div class="table-wrap"><table><thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`}
+function actions(type,arr,item){return `<div class="row-actions"><button class="btn secondary small" onclick="editItem('${type}','${arr}','${item.id}')">ویرایش</button><button class="btn danger small" onclick="removeItem('${arr}','${item.id}')">حذف</button></div>`}
+function renderProductions(){const q=($('#productionSearch')?.value||'').trim().toLowerCase();const list=db.productions.filter(p=>(p.title+' '+p.author+' '+p.director).toLowerCase().includes(q));$('#productionsTable').innerHTML=table(['نمایش','نویسنده / کارگردان','مرحله','تاریخ اجرا','عملیات'],list.map(p=>`<tr><td><strong>${esc(p.title)}</strong>${p.venue?`<div class="muted tiny">${esc(p.venue)}</div>`:''}</td><td>${esc(p.author||'—')}<div class="muted tiny">${esc(p.director||'')}</div></td><td><span class="tag ${p.status==='آماده اجرا'?'green':p.status==='پایان‌یافته'?'orange':''}">${esc(p.status||'ایده‌پردازی')}</span></td><td>${dateISO(p.date)||'—'}</td><td>${actions('production','productions',p)}</td></tr>`))}
+function renderPeople(){const q=($('#peopleSearch')?.value||'').trim().toLowerCase();const list=db.people.filter(p=>(p.name+' '+p.role+' '+p.phone).toLowerCase().includes(q));$('#peopleTable').innerHTML=table(['نام','سمت','شماره تماس','نمایش مرتبط','عملیات'],list.map(p=>`<tr><td><strong>${esc(p.name)}</strong>${p.notes?`<div class="muted tiny">${esc(p.notes)}</div>`:''}</td><td><span class="tag">${esc(p.role||'سایر')}</span></td><td>${esc(p.phone||'—')}</td><td>${esc(p.production||'—')}</td><td>${actions('person','people',p)}</td></tr>`))}
+function renderEvents(){const list=[...db.events].sort((a,b)=>(a.date||'').localeCompare(b.date||''));$('#scheduleList').innerHTML=list.length?list.map(ev=>{const d=ev.date?new Date(ev.date+'T12:00:00'):null;return `<div class="event"><div class="event-date"><strong>${d?d.toLocaleDateString('fa-IR',{day:'numeric'}):'—'}</strong><span class="tiny">${d?d.toLocaleDateString('fa-IR',{month:'short'}):''}</span></div><div style="flex:1;min-width:0"><h4>${esc(ev.title)}</h4><p>${esc(ev.type||'برنامه')} · ${esc(ev.time||'ساعت نامشخص')} · ${esc(ev.production||'بدون نمایش مشخص')}</p><p>${esc(ev.location||'مکان مشخص نشده')}${ev.notes?' · '+esc(ev.notes):''}</p></div>${actions('event','events',ev)}</div>`}).join(''):'<div class="empty">هنوز برنامه‌ای ثبت نشده است. تمرین یا جلسه بعدی را اضافه کنید.</div>'}
+function renderTransactions(){const list=[...db.transactions].sort((a,b)=>(b.date||'').localeCompare(a.date||''));$('#transactionsTable').innerHTML=table(['شرح','نوع','تاریخ','نمایش','مبلغ','عملیات'],list.map(t=>`<tr><td><strong>${esc(t.title)}</strong></td><td><span class="tag ${t.kind==='درآمد'?'green':'orange'}">${esc(t.kind||'هزینه')}</span></td><td>${dateISO(t.date)||'—'}</td><td>${esc(t.production||'—')}</td><td class="money">${t.kind==='درآمد'?'+':'−'}${money(t.amount)}</td><td>${actions('transaction','transactions',t)}</td></tr>`))}
+function renderDashboard(){const income=db.transactions.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+(+t.amount||0),0),expense=db.transactions.filter(t=>t.kind!=='درآمد').reduce((a,t)=>a+(+t.amount||0),0);const now=new Date().toISOString().slice(0,10);$('#statProductions').textContent=fa(db.productions.length);$('#statPeople').textContent=fa(db.people.length);$('#statEvents').textContent=fa(db.events.filter(e=>e.date>=now).length);$('#statCosts').textContent=fa(expense);const ps=db.productions.slice(-3).reverse();$('#dashboardProductions').innerHTML=ps.length?ps.map(p=>`<div class="production"><div class="prod-poster">🎭</div><div style="flex:1"><h4>${esc(p.title)}</h4><p>${esc(p.author||'نویسنده ثبت نشده')} · ${esc(p.director||'کارگردان ثبت نشده')}</p><div class="tags"><span class="tag">${esc(p.status||'ایده‌پردازی')}</span>${p.date?`<span class="tag">${dateISO(p.date)}</span>`:''}</div></div></div>`).join(''):'<div class="empty">اولین نمایش خود را ثبت کنید تا اینجا نمایش داده شود.</div>';const ev=db.events.filter(e=>e.date>=now).sort((a,b)=>a.date.localeCompare(b.date)).slice(0,4);$('#dashboardTasks').innerHTML=ev.length?ev.map(e=>`<div class="task"><span>◷</span><div><strong>${esc(e.title)}</strong><small>${dateISO(e.date)} ${e.time?' · '+esc(e.time):''} ${e.production?' · '+esc(e.production):''}</small></div></div>`).join(''):'<div class="empty">برنامه پیش‌رو ندارید؛ یک تمرین یا جلسه ثبت کنید.</div>'}
+function renderBudget(){const income=db.transactions.filter(t=>t.kind==='درآمد').reduce((a,t)=>a+(+t.amount||0),0),expense=db.transactions.filter(t=>t.kind!=='درآمد').reduce((a,t)=>a+(+t.amount||0),0);$('#totalIncome').textContent=money(income);$('#totalExpense').textContent=money(expense);$('#balance').textContent=money(income-expense);$('#budgetProgress').style.width=(income+expense?Math.min(100,expense/Math.max(income,expense)*100):0)+'%';}
+function render(){renderProductions();renderPeople();renderEvents();renderTransactions();renderDashboard();renderBudget()}
+$('#addProduction').onclick=()=>openModal('production');$('#addPerson').onclick=()=>openModal('person');$('#addEvent').onclick=()=>openModal('event');$('#addTransaction').onclick=()=>openModal('transaction');
+$('#productionSearch').addEventListener('input',renderProductions);$('#peopleSearch').addEventListener('input',renderPeople);
+$('#quickAdd').onclick=()=>{const choice=prompt('چه چیزی می‌خواهید اضافه کنید؟\n۱ - نمایش\n۲ - عضو گروه\n۳ - تمرین یا جلسه\n۴ - تراکنش مالی');if(choice==='1'||choice==='۱')openModal('production');else if(choice==='2'||choice==='۲')openModal('person');else if(choice==='3'||choice==='۳')openModal('event');else if(choice==='4'||choice==='۴')openModal('transaction')};
+window.editItem=editItem;window.removeItem=removeItem;
+const themes = [{"name":"اقیانوس","id":"ocean","bg":"#071b2b","surface":"#0b3145","accent":"#22d3ee","accent2":"#67e8f9"},{"name":"زمرد","id":"emerald","bg":"#071f1a","surface":"#0b382c","accent":"#34d399","accent2":"#a7f3d0"},{"name":"یاقوت","id":"ruby","bg":"#260d1b","surface":"#481327","accent":"#fb7185","accent2":"#fda4af"},{"name":"کهربا","id":"amber","bg":"#241507","surface":"#42260b","accent":"#f59e0b","accent2":"#fcd34d"},{"name":"یخی","id":"ice","bg":"#0b1b2c","surface":"#132d47","accent":"#60a5fa","accent2":"#bfdbfe"},{"name":"رز","id":"rose","bg":"#2a101f","surface":"#45172e","accent":"#fb7185","accent2":"#fbcfe8"},{"name":"بنفش سلطنتی","id":"royal","bg":"#160b2b","surface":"#2c1452","accent":"#a78bfa","accent2":"#ddd6fe"},{"name":"فیروزه‌ای","id":"turquoise","bg":"#062624","surface":"#0b403d","accent":"#2dd4bf","accent2":"#99f6e4"},{"name":"آسمانی","id":"sky","bg":"#0b1a32","surface":"#122d56","accent":"#38bdf8","accent2":"#bae6fd"},{"name":"آتشین","id":"flame","bg":"#2a1009","surface":"#4c1b0c","accent":"#f97316","accent2":"#fdba74"},{"name":"یاسی","id":"lilac","bg":"#1b1228","surface":"#352044","accent":"#c4b5fd","accent2":"#f5d0fe"},{"name":"جنگلی","id":"forest","bg":"#0b1c16","surface":"#153a29","accent":"#4ade80","accent2":"#bbf7d0"},{"name":"شب‌تاب","id":"neon","bg":"#090d20","surface":"#151a3e","accent":"#a3e635","accent2":"#d9f99d"},{"name":"طلایی","id":"gold","bg":"#211809","surface":"#3b2a0c","accent":"#eab308","accent2":"#fde68a"},{"name":"نقره‌ای","id":"silver","bg":"#151923","surface":"#292f3b","accent":"#cbd5e1","accent2":"#f1f5f9"},{"name":"مس","id":"copper","bg":"#24150f","surface":"#432719","accent":"#fb923c","accent2":"#fed7aa"},{"name":"مرجانی","id":"coral","bg":"#291219","surface":"#4a1c2a","accent":"#fb7185","accent2":"#fecdd3"},{"name":"اسطوخودوس","id":"lavender","bg":"#1b1430","surface":"#30204b","accent":"#b197fc","accent2":"#e9d5ff"},{"name":"قطبی","id":"polar","bg":"#0c1924","surface":"#193143","accent":"#7dd3fc","accent2":"#e0f2fe"},{"name":"آلو","id":"plum","bg":"#210e29","surface":"#40184c","accent":"#d8b4fe","accent2":"#f5d0fe"},{"name":"چای سبز","id":"matcha","bg":"#192012","surface":"#303c20","accent":"#a3b18a","accent2":"#d9ed92"},{"name":"آبی سلطنتی","id":"royalblue","bg":"#0c1530","surface":"#17285b","accent":"#6366f1","accent2":"#c7d2fe"},{"name":"کاربنی","id":"carbon","bg":"#111318","surface":"#242832","accent":"#94a3b8","accent2":"#e2e8f0"},{"name":"شفق قطبی","id":"aurora","bg":"#071d28","surface":"#123d4a","accent":"#5eead4","accent2":"#c4b5fd"},{"name":"تمشکی","id":"raspberry","bg":"#260c24","surface":"#4b1644","accent":"#e879f9","accent2":"#f5d0fe"},{"name":"لیمویی","id":"lemon","bg":"#20200a","surface":"#393914","accent":"#d9f99d","accent2":"#fef08a"},{"name":"آبی نفتی","id":"petrol","bg":"#081d25","surface":"#123640","accent":"#2dd4bf","accent2":"#a5f3fc"},{"name":"ماژنتا","id":"magenta","bg":"#240b22","surface":"#45143f","accent":"#e879f9","accent2":"#f0abfc"},{"name":"آبی فولادی","id":"steel","bg":"#101d2c","surface":"#24374d","accent":"#7dd3fc","accent2":"#cbd5e1"},{"name":"شن و ماسه","id":"sand","bg":"#251d15","surface":"#433528","accent":"#d6b98c","accent2":"#f5e6c8"},{"name":"شکلاتی","id":"chocolate","bg":"#1e120f","surface":"#38221a","accent":"#c08457","accent2":"#f0d0b0"},{"name":"گیلاسی","id":"cherry","bg":"#260b15","surface":"#491426","accent":"#e11d48","accent2":"#fda4af"},{"name":"بنفش نئونی","id":"ultraviolet","bg":"#120829","surface":"#28104d","accent":"#c084fc","accent2":"#f0abfc"},{"name":"سبز دریایی","id":"seagreen","bg":"#08201d","surface":"#124037","accent":"#34d399","accent2":"#99f6e4"},{"name":"آبی یخی","id":"glacier","bg":"#0b1b27","surface":"#153348","accent":"#7dd3fc","accent2":"#e0f2fe"},{"name":"خاکستری بنفش","id":"mauve","bg":"#19141e","surface":"#302633","accent":"#c4b5fd","accent2":"#e9d5ff"},{"name":"زرد خورشیدی","id":"sunshine","bg":"#251b06","surface":"#47310a","accent":"#facc15","accent2":"#fef08a"},{"name":"قرمز مخملی","id":"velvet","bg":"#210b12","surface":"#3e1520","accent":"#f43f5e","accent2":"#fecdd3"},{"name":"باغ بهاری","id":"spring","bg":"#102016","surface":"#1e3a2a","accent":"#86efac","accent2":"#f9a8d4"},{"name":"آبی عمیق","id":"deepblue","bg":"#080f27","surface":"#111f4a","accent":"#818cf8","accent2":"#c7d2fe"},{"name":"آبنبات","id":"candy","bg":"#241027","surface":"#43194a","accent":"#f0abfc","accent2":"#fbcfe8"},{"name":"زمرد تیره","id":"darkemerald","bg":"#071a15","surface":"#0e3024","accent":"#10b981","accent2":"#a7f3d0"},{"name":"طلوع","id":"sunrise","bg":"#29120c","surface":"#4a2017","accent":"#fb923c","accent2":"#fda4af"},{"name":"ماه","id":"moon","bg":"#111322","surface":"#242742","accent":"#a5b4fc","accent2":"#e2e8f0"},{"name":"بنفش و طلایی","id":"violetgold","bg":"#171025","surface":"#30203b","accent":"#c4b5fd","accent2":"#fcd34d"}];
+const defaultTheme={name:'بنفش اصلی',id:'default',bg:'#100d1a',surface:'#171126',accent:'#a78bfa',accent2:'#f0abfc'};
+function applyTheme(t,saveChoice=true){
+  const root=document.documentElement;
+  root.style.setProperty('--bg',t.bg);root.style.setProperty('--surface',t.surface);
+  root.style.setProperty('--accent',t.accent);root.style.setProperty('--accent2',t.accent2);
+  document.body.style.background=`radial-gradient(ellipse at 12% 0%,${t.accent}22,transparent 38%),radial-gradient(ellipse at 90% 30%,${t.accent2}18,transparent 35%),linear-gradient(135deg,${t.bg},${t.surface} 60%,${t.bg})`;
+  $('#activeThemeName').textContent='تم '+t.name;
+  if(saveChoice){try{localStorage.setItem('sahne_theme_v1',t.id)}catch{}}
+  $$('.theme-card').forEach(c=>c.classList.toggle('selected',c.dataset.theme===t.id));
+}
+function renderThemes(){
+  const all=[defaultTheme,...themes];
+  $('#themeGrid').innerHTML=all.map(t=>`<button class="theme-card" data-theme="${t.id}" type="button"><span class="swatches"><i style="background:${t.bg}"></i><i style="background:${t.surface}"></i><i style="background:${t.accent}"></i><i style="background:${t.accent2}"></i></span><span>${esc(t.name)}</span></button>`).join('');
+  $('#themeGrid').addEventListener('click',e=>{const b=e.target.closest('[data-theme]');if(!b)return;const t=all.find(x=>x.id===b.dataset.theme);if(t){applyTheme(t);showNotice('تم رنگی تغییر کرد.')}});
+  let saved='default';try{saved=localStorage.getItem('sahne_theme_v1')||'default'}catch{}
+  applyTheme(all.find(t=>t.id===saved)||defaultTheme,false);
+}
+$('#exportData').addEventListener('click',()=>{
+  const payload={app:'Sahne',version:'1.1',exportedAt:new Date().toISOString(),data:db};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='sahne-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);showNotice('نسخه پشتیبان آماده شد.');
+});
+$('#importData').addEventListener('change',async e=>{
+  const file=e.target.files?.[0];if(!file)return;
+  try{
+    const payload=JSON.parse(await file.text());const data=payload.data||payload;
+    if(!data||!Array.isArray(data.productions)||!Array.isArray(data.people)||!Array.isArray(data.events)||!Array.isArray(data.transactions))throw new Error('ساختار فایل پشتیبان درست نیست.');
+    if(!confirm('اطلاعات فعلی با اطلاعات فایل پشتیبان جایگزین شود؟'))return;
+    db={productions:data.productions,people:data.people,events:data.events,transactions:data.transactions,notes:Array.isArray(data.notes)?data.notes:[],tasks:Array.isArray(data.tasks)?data.tasks:[]};save();renderNotes();renderTasks();renderCalendar();showNotice('اطلاعات بازیابی شد.');
+  }catch(err){alert('بازیابی انجام نشد: '+(err.message||'فایل نامعتبر است.'))}
+  finally{e.target.value=''}
+});
+
+/* Profile and daily quote: quote changes once per local calendar day. */
+const quotes=[
+'هر قدم کوچک، بخشی از یک اجرای بزرگ است.',
+'لازم نیست همه‌چیز از ابتدا کامل باشد؛ فقط شروع کن.',
+'هنر از توجه به جزئیات و شجاعتِ امتحان‌کردن جان می‌گیرد.',
+'پشت هر اجرای خوب، تمرین‌های کوچک و پیوسته پنهان است.',
+'امروز فرصتی تازه است برای ساختن چیزی که به آن باور داری.',
+'به مسیرت اعتماد کن؛ پیشرفت همیشه پرسر و صدا نیست.',
+'ایده‌ها وقتی جان می‌گیرند که برایشان جا باز کنیم.',
+'یک گروه خوب با شنیدن، احترام و همکاری ساخته می‌شود.',
+'اشتباه‌ها پایان راه نیستند؛ بخشی از تمرین‌اند.',
+'با نظم بیشتر، ذهن فرصت بیشتری برای خلاقیت پیدا می‌کند.',
+'کار بزرگ را به قدم‌های کوچک و شدنی تقسیم کن.',
+'هر روز کمی بهتر شدن، خودش یک موفقیت واقعی است.',
+'گاهی بهترین تصمیم، مکث کردن و دوباره دیدن ماجراست.',
+'به خودت فرصت یادگرفتن بده؛ هیچ هنرمندی یک‌شبه ساخته نمی‌شود.',
+'امروز می‌توانی یک چیز کوچک را بهتر از دیروز انجام بدهی.',
+'توجه و مهربانی، فضای امن‌تری برای خلاقیت می‌سازند.',
+'به جای منتظر ماندن برای انگیزه، با یک قدم ساده شروع کن.',
+'پشت صحنه هم بخشی از جادوی صحنه است.',
+'هر صدایی در گروه ارزش شنیده‌شدن دارد.',
+'پایان یک تمرین، آغاز یک یادگیری تازه است.',
+'برای ایده‌های خوب، دفترچه‌ای کوچک و ذهنی کنجکاو داشته باش.',
+'برنامه‌ریزی قرار نیست خلاقیت را محدود کند؛ به آن فضا می‌دهد.',
+'صبوری با خودت، بخشی از حرفه‌ای‌شدن است.',
+'یک گفت‌وگوی روشن می‌تواند از چندین سوءتفاهم جلوگیری کند.',
+'به پیشرفت نگاه کن، نه فقط به فاصله‌ای که مانده است.',
+'هر اجرا از تصمیم‌های کوچک و همکاری‌های بزرگ شکل می‌گیرد.',
+'امروز یک کار مهم را انتخاب کن و با آرامش انجامش بده.',
+'تجربه با امتحان‌کردن به دست می‌آید، نه فقط با فکرکردن.',
+'به تلاش خودت احترام بگذار؛ رشد زمان می‌خواهد.',
+'یک ایده را بنویس؛ شاید شروع اتفاقی بزرگ باشد.',
+'کیفیت از تمرکز و استمرار می‌آید.',
+'برای ساختن اثر خوب، هم تخیل لازم است هم پیگیری.',
+'وقتی مسیر روشن نیست، قدم بعدی را روشن کن.',
+'به جای کامل‌بودن، پیوسته و مسئولانه پیش برو.',
+'یک تشویق به‌موقع می‌تواند انرژی یک گروه را عوض کند.',
+'به تفاوت دیدگاه‌ها گوش بده؛ گاهی همان‌جا ایده تازه پیدا می‌شود.',
+'امروز برای چیزی که دوست داری، ده دقیقه وقت بگذار.',
+'کارهای کوچکِ انجام‌شده از برنامه‌های بزرگِ عقب‌افتاده بهترند.',
+'هر روز می‌تواند فرصتی برای شروعی دوباره باشد.',
+'پشتکار یعنی ادامه‌دادن، حتی وقتی پیشرفت آرام است.',
+'با هر تمرین، شناختت از اثر و گروه عمیق‌تر می‌شود.',
+'به یاد داشته باش که استراحت هم بخشی از کار خوب است.',
+'اگر چیزی مبهم است، سؤال‌کردن نشانه دقت است.',
+'برای نتیجه بهتر، به خودت و گروهت زمان بده.',
+'امروز یک قدم بردار؛ لازم نیست تمام مسیر را یک‌جا بروی.'
+];
+function localDayKey(d=new Date()){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function initWelcome(){
+  let profile={name:''};try{profile={...profile,...JSON.parse(localStorage.getItem('sahne_profile_v1')||'{}')}}catch{}
+  const greet=()=>{const n=(profile.name||'').trim();$('#welcomeTitle').textContent=n?`خوش آمدی، ${n} جان! ✨`:'خوش آمدید به صحنه ✨';$('#welcomeSub').textContent=n?'امروز هم می‌توانی قدمی کوچک برای یک اجرای بهتر برداری. اینجا فضای کار و ایده‌های توست.':'برای شخصی‌سازی خوش‌آمدگویی، نام خود را در تنظیمات وارد کنید.';if($('#profileName'))$('#profileName').value=profile.name||'';const now=new Date();const idx=Math.abs([...localDayKey()].reduce((a,c)=>a+c.charCodeAt(0),0))%quotes.length;$('#dailyQuote').textContent=quotes[idx];$('#quoteDate').textContent='جمله انگیزشی امروز · '+now.toLocaleDateString('fa-IR',{weekday:'long',day:'numeric',month:'long'});};
+  $('#saveProfile').onclick=()=>{profile.name=$('#profileName').value.trim();localStorage.setItem('sahne_profile_v1',JSON.stringify(profile));greet();showNotice(profile.name?'نام شما ذخیره شد.':'نام پاک شد.');};
+  greet();
+  if(!profile.name && !sessionStorage.getItem('sahne_name_prompted')){sessionStorage.setItem('sahne_name_prompted','1');setTimeout(()=>{const name=prompt('به صحنه خوش آمدید! 🎭\\nبرای شخصی‌سازی برنامه، نام شما چیست؟');if(name&&name.trim()){profile.name=name.trim();localStorage.setItem('sahne_profile_v1',JSON.stringify(profile));greet();showNotice('خوش آمدی، '+profile.name+'!')}},250)}
+}
+function openNote(note=null){
+  const target=$('#noteEditor');const n=note||{title:'',body:''};
+  target.innerHTML=`<form id="noteForm"><div class="form-grid"><div class="field full"><label>عنوان یادداشت</label><input name="title" required value="${esc(n.title||'')}" placeholder="مثلاً ایده صحنه دوم"></div><div class="field full"><label>متن یادداشت</label><textarea name="body" style="min-height:230px" placeholder="ایده‌ها، نکته‌های تمرین یا کارهای مهم را بنویس…">${esc(n.body||'')}</textarea></div></div><div class="form-actions"><button class="btn" type="submit">ذخیره یادداشت</button>${note?`<button class="btn danger" type="button" id="deleteNote">حذف</button>`:''}</div></form>`;
+  $('#noteForm').onsubmit=e=>{e.preventDefault();const data=Object.fromEntries(new FormData(e.target));const stamp=new Date().toISOString();if(note){Object.assign(note,data,{updatedAt:stamp})}else db.notes.unshift({id:id(),...data,createdAt:stamp,updatedAt:stamp});save();renderNotes();showNotice('یادداشت ذخیره شد.')};
+  if(note)$('#deleteNote').onclick=()=>{if(confirm('این یادداشت حذف شود؟')){db.notes=db.notes.filter(x=>x.id!==note.id);save();renderNotes();target.innerHTML='<div class="empty">یادداشت حذف شد.</div>'}};
+}
+function renderNotes(){
+ const q=($('#noteSearch')?.value||'').toLowerCase().trim();const list=db.notes.filter(n=>(n.title+' '+n.body).toLowerCase().includes(q));
+ $('#notesList').innerHTML=list.length?list.map(n=>`<div class="note-item" data-note="${n.id}"><strong>${esc(n.title)}</strong><small>${new Date(n.updatedAt||n.createdAt||Date.now()).toLocaleDateString('fa-IR',{day:'numeric',month:'short',year:'numeric'})}</small><div class="muted tiny" style="margin-top:6px">${esc((n.body||'').slice(0,70))}${(n.body||'').length>70?'…':''}</div></div>`).join(''):'<div class="empty">یادداشتی پیدا نشد. اولین یادداشت را بنویسید.</div>';
+ $('#notesList').querySelectorAll('[data-note]').forEach(el=>el.onclick=()=>{const n=db.notes.find(x=>x.id===el.dataset.note);if(n)openNote(n);$('#notesList').querySelectorAll('.note-item').forEach(x=>x.classList.toggle('active',x===el))});
+}
+function addTask(){
+ const title=prompt('عنوان کار چیست؟');if(!title||!title.trim())return;
+ const due=prompt('تاریخ سررسید (اختیاری، مثل 2026-10-25) را وارد کنید یا خالی بگذارید:','');
+ db.tasks.unshift({id:id(),title:title.trim(),due:(due||'').trim(),done:false,createdAt:new Date().toISOString()});save();renderTasks();
+}
+function renderTasks(){
+ const todo=db.tasks.filter(t=>!t.done),done=db.tasks.filter(t=>t.done);$('#todoCount').textContent=fa(todo.length);$('#doneCount').textContent=fa(done.length);
+ const item=t=>`<div class="checklist-item ${t.done?'done':''}"><input type="checkbox" ${t.done?'checked':''} data-task="${t.id}"><div style="flex:1"><span>${esc(t.title)}</span>${t.due?`<small class="muted" style="display:block;margin-top:4px">${esc(t.due)}</small>`:''}</div><button class="btn danger small" data-del-task="${t.id}">حذف</button></div>`;
+ $('#todoList').innerHTML=todo.length?todo.map(item).join(''):'<div class="empty">فعلاً کاری در انتظار انجام نیست.</div>';$('#doneList').innerHTML=done.length?done.map(item).join(''):'<div class="empty">کارهای انجام‌شده اینجا نمایش داده می‌شوند.</div>';
+ document.querySelectorAll('[data-task]').forEach(el=>el.onchange=()=>{const t=db.tasks.find(x=>x.id===el.dataset.task);if(t)t.done=el.checked;save();renderTasks()});
+ document.querySelectorAll('[data-del-task]').forEach(el=>el.onclick=()=>{if(confirm('این کار حذف شود؟')){db.tasks=db.tasks.filter(x=>x.id!==el.dataset.delTask);save();renderTasks()}});
+}
+let calMonth=new Date(new Date().getFullYear(),new Date().getMonth(),1),selectedDate=localDayKey();
+function renderCalendar(){
+ const year=calMonth.getFullYear(),month=calMonth.getMonth();$('#calendarMonth').textContent=calMonth.toLocaleDateString('fa-IR',{year:'numeric',month:'long'});
+ const first=new Date(year,month,1),start=(first.getDay()+1)%7; // Saturday-first layout
+ const dayNames=['ش','ی','د','س','چ','پ','ج'];let out=dayNames.map(x=>`<div class="day-label">${x}</div>`).join('');
+ const startDate=new Date(year,month,1-start);
+ for(let i=0;i<42;i++){const d=new Date(startDate);d.setDate(startDate.getDate()+i);const iso=localDayKey(d),inMonth=d.getMonth()===month,evs=db.events.filter(e=>e.date===iso);out+=`<button class="calendar-day ${inMonth?'':'muted-day'} ${iso===localDayKey()?'today':''} ${iso===selectedDate?'selected':''}" data-date="${iso}"><span class="daynum">${d.toLocaleDateString('fa-IR',{day:'numeric'})}</span>${evs.slice(0,2).map(e=>`<span class="event-dot">• ${esc(e.title)}</span>`).join('')}</button>`}
+ $('#monthGrid').innerHTML=out;$('#monthGrid').querySelectorAll('[data-date]').forEach(b=>b.onclick=()=>{selectedDate=b.dataset.date;renderCalendar()});
+ $('#selectedDayTitle').textContent='برنامه‌های '+new Date(selectedDate+'T12:00:00').toLocaleDateString('fa-IR',{weekday:'long',day:'numeric',month:'long'});
+ const evs=db.events.filter(e=>e.date===selectedDate);$('#selectedDayEvents').innerHTML=evs.length?evs.map(e=>`<div class="event"><div style="flex:1"><h4>${esc(e.title)}</h4><p>${esc(e.type||'برنامه')} · ${esc(e.time||'ساعت نامشخص')} · ${esc(e.location||'مکان مشخص نشده')}</p></div>${actions('event','events',e)}</div>`).join(''):'<div class="empty">برای این روز برنامه‌ای ثبت نشده است.</div>';
+}
+$('#prevMonth').onclick=()=>{calMonth=new Date(calMonth.getFullYear(),calMonth.getMonth()-1,1);renderCalendar()};
+$('#nextMonth').onclick=()=>{calMonth=new Date(calMonth.getFullYear(),calMonth.getMonth()+1,1);renderCalendar()};
+$('#calendarToday').onclick=()=>{calMonth=new Date();selectedDate=localDayKey();renderCalendar()};
+$('#calendarAdd').onclick=()=>openModal('event');
+$('#addNote').onclick=()=>openNote();$('#noteSearch').addEventListener('input',renderNotes);$('#addTask').onclick=addTask;
+document.addEventListener('click',e=>{const b=e.target.closest('[data-open]');if(!b)return;const typ=b.dataset.open;if(typ==='note'){navigate('notes');openNote()}else if(typ==='task'){navigate('tasks');addTask()}else if(['production','event','person','transaction'].includes(typ)){const map={production:'productions',event:'schedule',person:'people',transaction:'budget'};navigate(map[typ]);openModal(typ)}});
+
+render();renderThemes();initWelcome();renderNotes();renderTasks();renderCalendar();
+</script>
+</body></html>
