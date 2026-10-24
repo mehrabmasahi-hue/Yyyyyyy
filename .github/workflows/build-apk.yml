@@ -27,18 +27,22 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Set up Gradle 8.6
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.6'
 
       - name: Install Android SDK components
-        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+        run: sdkmanager \"platforms;android-34\" \"build-tools;34.0.0\"
 
-      - name: Verify HTML asset
-        run: test -f app/src/main/assets/index.html
+      - name: Check project files
+        run: |
+          test -f settings.gradle
+          test -f build.gradle
+          test -f app/build.gradle
+          test -f app/src/main/assets/index.html
 
       - name: Build release APK
-        run: gradle --no-daemon assembleRelease
+        run: gradle --no-daemon --stacktrace assembleRelease
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
